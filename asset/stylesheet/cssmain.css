@@ -1,0 +1,2062 @@
+.marque{
+    height: 50px;
+    width: 100%;
+    padding: 0 30px;
+    background-color: black;
+    >.row{
+        /* border: 2px solid red; */
+        height: 100%;
+        >span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            /* border: 2px solid beige; */
+            >marquee{
+                color: white;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+/* marquee ned */
+
+.main_logo{
+    width: 100%;
+    height: 150px;
+    background-color: #e8e8e8f1;
+    /* border: 2px solid black; */
+    >.row{
+        /* border: 2px solid red; */
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        >*{
+            /* border: 2px solid green; */
+            height: 100%;  
+        }
+        >figure{
+            height: 60px;
+            width: 15%;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            margin-left: 80px;
+            >img{
+                height: 100%;
+                width: 80%;
+                object-fit:fill;
+            }
+        }
+        >form{
+            /* border: 2px solid black; */
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            >*{
+                height: 80px;
+            }
+            >input{
+                width: 80%;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                font-size: 20px;
+                padding-left: 10px;
+                padding-right: 10px; 
+            }
+            >.input_box{
+                background-color: black;
+                width: 80px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                transition: .4s;
+                &:hover{
+                    background-color: #76b62b;
+                }
+                >i{
+                    font-size: 30px;
+                }
+            }
+        }
+        >.icon{
+            margin-right: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+            >*{
+                /* border: 1px solid yellow; */
+                font-size: 50px;  
+            }
+            >a{
+                transition: .4s;
+                margin: 0 15px;
+                &:hover{
+                    color: rgba(196, 196, 0, 0.834);
+                }
+                    
+            }
+
+        }
+
+    }
+}
+
+/* end main_logo */
+
+.menu{
+    width: 100%;
+    height: 100px;
+    padding: 0 100px;
+    background-color: #76b62b;
+    position: relative;
+    z-index: 1000;
+    >.row{
+        /* border: 2px solid red; */
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        >*{
+            height: 100%;
+            /* border: 2px solid black; */
+        }
+        >.left{
+            height: 84px;
+            width: 15%;
+            border-radius: 10px;
+            background-color:#5e8334ac;
+            border: none;
+            /* opacity: .3; */
+            >.m_box{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px solid red; */
+                >a{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 42px;
+                }
+            }
+            &:hover{
+                .left_menu{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .left_menu{
+                width: 120%;
+                height: 300px;
+                margin-top: 15px;
+                background-color: #e8e8e8f1;
+                border-radius: 10px;
+                opacity: 0;
+                visibility: hidden;
+                transition: .4s;
+                /* border: 2px solid black; */
+                >.left_drop_down{
+                    width: 100%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                    >li{
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        /* border: 2px solid blue; */
+                        >*{
+                            height: 100%;
+                            /* border: 1px solid violet; */
+                        }
+                        >span{
+                            width: 20%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            >img{
+                                height: 80%;
+                                width: 80%;
+                                background-color: #ffa42d;
+                                transition: .4s;
+                                &:hover{
+                                    background-color: #76b62b;
+                                }
+                            }
+                        }
+                        >a{
+                            width: 80%;
+                            text-decoration:underline;
+                            text-align: center;
+                            line-height: 50px;
+                            margin-right: 10px;
+                            transition: .4s;
+                            &:hover{
+                                color: #ffa42d;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >nav{
+            width: 70%;
+            >ul{
+                /* border: 2px solid blue; */
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                >.li1{
+                    height: 100%;
+                    /* border: 1px solid rgb(131, 9, 9); */
+                    >.sub_li1{
+                        width: 120%;
+                        height: 160px;
+                        margin-top: 10px;
+                        /* border: 2px solid black; */
+                        background-color: #e8e8e8f1;
+                        border-radius: 10px;
+                        transition: .4s;
+                        opacity: 0;
+                        visibility: hidden;
+                        >li{
+                            width: 100%;
+                            height: 50%;
+                            >.a1_sub{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: left;
+                                /* background-color: #ffa42d; */
+                                padding-left: 20px;
+                                color: #76b62b;
+                                border-bottom: .5px solid rgba(128, 128, 128, 0.477);
+                            }
+                            >a{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: left;
+                                /* background-color: #ffa42d; */
+                                padding-left: 20px;
+                                transition: 1s;
+                                &:hover{
+                                    color: #76b62b;
+                                }
+                            }
+                        } 
+                    }
+                    &:hover{
+                        >.sub_li1{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+
+                >.li2{
+                    height: 100%;
+                    /* border: 1px solid rgb(147, 15, 15); */
+                    >ul{
+                        width: 100%;
+                        height: 400px;
+                        margin-top: 10px;
+                        /* border: 2px solid black; */
+                        background-color: #e8e8e8;
+                        border-radius: 10px;
+                        position: absolute;
+                        left: 0;
+                        transition: .4s;
+                        opacity: 0;
+                        visibility: hidden;
+                        >li{
+                            width: 100%;
+                            height: 100%;
+                            /* border: 2px solid red; */
+                            >ul{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: space-evenly;
+                                >.col1{
+                                    width: 30%;
+                                    height: 100%;
+                                    /* border: 2px solid blue; */
+                                    >ul{
+                                        /* border: 2px solid black; */
+                                        width: 100%;
+                                        height: 95%;
+                                        margin-top: 10px;
+                                        >.col_li1{
+                                            border-bottom: .5px solid rgba(128, 128, 128, 0.449);
+                                            width: 100%;
+                                            height: 19%;
+                                            >h2{
+                                                color: black;
+                                                margin-top: 20px;
+                                                margin-left: 10px;
+                                            }
+                                        }
+                                        >li{
+                                            /* border: 1px solid violet; */
+                                            width: 100%;
+                                            height: 25%;
+                                            display: flex;
+                                            margin-top: 5px;
+                                            >img{
+                                                /* border: 2px solid black; */
+                                                width: 30%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                                border-radius: 10px;
+                                            }
+                                            >div{
+                                                /* border: 2px solid black; */
+                                                width: 70%;
+                                                height: 100%;
+                                                >*{
+                                                    /* border: 2px solid red; */
+                                                    width: 80%;
+                                                    height: auto;
+                                                    margin-left: 20px;
+                                                    margin-top: 25px;
+                                                    display: block;
+                                                    font-weight: bold;
+                                                }
+                                                >a{
+                                                    color: black;
+                                                    text-decoration: underline;
+                                                    transition: .4s;
+                                                    &:hover{
+                                                        color: #76b62b;
+                                                        text-decoration: none;
+                                                    }
+                                                }
+                                                >span{
+                                                    color: tomato;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                >.img1{
+                                    width: 30%;
+                                    height: 95%;
+                                    margin: 10px;
+                                    position: relative;
+                                    /* border: 2px solid blue; */
+                                    >img{
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        border-radius: 10px;
+                                    }
+                                    >figcaption{
+                                        position: absolute;
+                                        width: 50%;
+                                        height: 130px;
+                                        /* border: 2px solid black; */
+                                        z-index: 10;
+                                        top: 35px; left: 50px;
+                                        >*{
+                                            /* border: 2px solid red; */
+                                            color: rgba(86, 86, 86, 0.839);
+                                        }
+                                        >a{
+                                            line-height: 110px;
+                                            border-bottom: .5px solid rgba(0, 0, 0, 0.462);
+                                            transition: .4s;
+                                            &:hover{
+                                                color: black;
+                                                border-bottom:.5px solid #ffa42d;
+                                            }
+                                        }
+                                    }
+                                }
+                                >.img2{
+                                    width: 30%;
+                                    height: 95%;
+                                    margin: 10px;
+                                    position: relative;
+                                    /* border: 2px solid blue; */
+                                    >img{
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        border-radius: 10px;
+                                    }
+                                    >figcaption{
+                                        position: absolute;
+                                        width: 50%;
+                                        height: 130px;
+                                        /* border: 2px solid black; */
+                                        z-index: 10;
+                                        top: 35px; left: 50px;
+                                        >*{
+                                            /* border: 2px solid red; */
+                                            color: rgba(86, 86, 86, 0.839);
+                                        }
+                                        >a{
+                                            line-height: 110px;
+                                            border-bottom: .5px solid rgba(0, 0, 0, 0.462);
+                                            transition: .4s;
+                                            &:hover{
+                                                color: black;
+                                                border-bottom:.5px solid #ffa42d;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        >ul{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                >.li3{
+                    height: 100%;
+                    /* border: 1px solid rgb(223, 19, 19); */
+                    >ul{
+                        width: 100%;
+                        height: 400px;
+                        margin-top: 10px;
+                        /* border: 2px solid black; */
+                        background-color: #e8e8e8;
+                        border-radius: 10px;
+                        position: absolute;
+                        left: 0;
+                        transition: .4s;
+                        opacity: 0;
+                        visibility: hidden;
+                        >li{
+                            /* border: 2px solid red; */
+                            width: 100%;
+                            height: 100%;
+                            >ul{
+                                /* border: 2px solid red; */
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                >.col1{
+                                    /* border: 2px solid blue; */
+                                    width: 24%;
+                                    height: 95%;
+                                    >ul{
+                                        /* border: 2px solid blue; */
+                                        background-color: #ffa42d18;
+                                        border-radius: 10px;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url(../image/avada-vegan-1.png);
+                                        >.col1_li1{
+                                            border-bottom: .5px solid rgba(42, 42, 42, 0.507);
+                                            width: 100%;
+                                            height: 20%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        >.col1_li2{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            line-height: 40px;
+                                            width: 100%;
+                                            height: 60%;
+                                            >p{
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                        >.col1_li3{
+                                            display: flex;
+                                            align-items: center;
+                                            width: 100%;
+                                            height: 20%;
+                                            >a{
+                                                border-bottom: 1px solid #ffa42d;
+                                                color: #ffa42d;
+                                                transition: .4s;
+                                                margin-left: 5px;
+                                                &:hover{
+                                                    color: black;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                >.col2{
+                                    /* border: 2px solid blue; */
+                                    width: 24%;
+                                    height: 95%;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                    >ul{
+                                        /* border: 2px solid red; */
+                                        width: 100%;
+                                        height: 100%;
+                                        >.col2_li1{
+                                            border-bottom: .5px solid rgba(42, 42, 42, 0.507);
+                                            width: 100%;
+                                            height: 20%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        >li{
+                                            width: 100%;
+                                            height: 10%;
+                                            margin-top: 10px;
+                                            >a{
+                                                margin-left: 40px;
+                                                display: flex;
+                                                align-items: center;
+                                                color: #76b62b;
+                                            }
+                                        }
+                                    }
+                                    
+                        
+                                }
+                                >.col3{
+                                    /* border: 2px solid blue; */
+                                    width: 24%;
+                                    height: 95%;
+                                    border-radius: 10px;
+                                    >ul{
+                                        /* border: 2px solid red; */
+                                        width: 100%;
+                                        height: 100%;
+                                        >.col3_li1{
+                                            border-bottom: .5px solid rgba(42, 42, 42, 0.507);
+                                            width: 100%;
+                                            height: 25%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        >li{
+                                            /* border: 2px solid black; */
+                                            width: 100%;
+                                            height: 25%;
+                                            >*{
+                                                /* border: 1px solid red; */
+                                                display: block;
+                                                margin-left: 5px;
+                                                margin-top: 15px;
+                                            }
+                                            >a{
+                                                text-decoration: underline;
+                                                transition: 1s;
+                                                &:hover{
+                                                    color: #ffa42d;
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                            >span{
+                                                color: rgba(51, 51, 51, 0.662);
+                                            }
+                                        }
+                                    }    
+                                }
+                                >.img{
+                                    /* border: 2px solid blue; */
+                                    width: 24%;
+                                    height: 95%;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                    >img{
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        >ul{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                >li{
+                    /* border: 2px solid brown; */
+                    height: 100%;                   
+                    >a{
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 100px;
+                        /* background-color: black; */
+                        display: flex;
+                        padding: 0 50px;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        >.right{
+            width: 15%;
+            height: 85px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >*{
+                /* border: 1px solid red; */
+                height: 100%;
+            }
+            >a{
+                width: 26%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 40px;
+                border-radius: 50px;
+                transition: .4s;
+                background-color: #ffa42d;
+                &:hover{
+                    background-color: #5e8334ac;
+                }
+            }
+            >.a_box{
+                width: 70%;
+                margin-left: 4%;
+                >*{
+                    /* border: 1px solid hotpink; */
+                    text-align: right;
+                    color: white;
+                }
+                >.p1{
+                    height: 50%;
+                    line-height: 40px;
+                }
+                >.p2{
+                    font-size: 20px;
+                    font-weight: bold;
+                    height: 50%;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+}
+
+/* end menu */
+
+.lifestyle{
+    width: 200vh;
+    height: 70vh;
+    >.row{
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 100%;
+        position: relative;
+        >figure{
+            /* border: 2px solid red; */
+            height: 100%;
+            width: 100%;
+            >img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            >span{
+                background-color: black;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0; left: 0;
+                opacity: .5;
+            }
+            >figcaption{
+                position: absolute;
+                left: 25%; top: 25%;
+                width: 50%;
+                height: 60%;
+                /* border: 2px solid black; */
+                >*{
+                    /* border: 2px solid red; */
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                }
+                >h1{
+                    font-size: 70px;
+                }
+                >p{
+                    font-size: 40px;
+                    margin-top: 40px;
+                }
+                >.row{
+                    margin-top: 60px;
+                    width: 70%;
+                    height: 20%;
+                    margin-left: 15%;
+                    >*{
+                        /* border: 2px solid green; */
+                        border-radius: 10px;
+                        font-size: 20px;
+                        display: flex;
+                        width: 40%;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 10px;
+                    }
+                    >.a1{
+                        background-color: #ffa42d;
+                        transition: .5s;
+                        &:hover{
+                            background-color: #76b62b;
+                        }
+                    }
+                    >.a2{
+                        border: 2px solid white;
+                        transition: .5s;
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* end lifestyle1 */
+
+.garante{
+    background-color: rgb(255, 233, 233);
+    width: 100%;
+    height: 200px;
+    >.row{
+        width: 100%;
+        height: 100%;
+        /* border: 2px solid red; */
+        justify-content: center;
+        align-items: center;
+        >div{
+            /* border: 2px solid black; */
+            transition: .4s;
+            height: 70%;
+            width: 30%;
+            >.row{
+                width: 100%;
+                height: 100%;
+                border-right: .5px solid gray;
+                >*{
+                    /* border: 2px solid green; */
+                    height: 100%;
+                }
+                >i{
+                    width: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    >.material-symbols-outlined{ 
+                         /* border: 1px solid red; */
+                         font-size: 100px;
+                         color: rgb(255, 36, 36);
+                    }
+                }
+                >div{
+                    width: 70%;
+                    >*{
+                        /* border: 1px solid violet; */
+                        width: 100%;
+                        height: 25%;
+                        margin-top: 20px;
+                    }
+                    >h3{
+                        
+                        font-size: 25px;
+                        
+                    }
+                    >p{
+                        font-size: 18px;
+                        color: rgb(104, 104, 104);
+                    }
+                }
+            }
+            &:hover{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+/* edn garante */
+
+.images{
+    /* border: 2px solid red; */
+    width: 200vh;
+    height: 80vh;
+    background-color: white;
+    >.row{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 100%;
+        >nav{
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >ul{
+                /* border: 2px solid black; */
+                width: 95%;
+                height: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                >li{
+                    /* border: 2px solid green; */
+                    height: 90%;
+                    width: 20%;
+                    >*{
+                        width: 100%;
+                        /* border: 2px solid red; */
+                    }
+                    >figure{
+                        height: 80%;
+                        position: relative;
+                        >a{
+                            /* border: 2px solid blue; */
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            >img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: fill;
+                            }
+                        }
+                        >.p1{
+                            /* border: 2px solid black; */
+                            position: absolute;
+                            left: 0; top: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            background-color: rgb(0, 196, 0);
+                            opacity: .2;
+                            transition: .4s;
+                            &:hover{
+                                /* visibility: hidden; */
+                                opacity: 0;
+                            }
+                        }
+                        >.p2{
+                            /* border: 2px solid black; */
+                            position: absolute;
+                            left: 0; top: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            background-color: rgb(25, 183, 251);
+                            opacity: .2;
+                            transition: .4s;
+                            &:hover{
+                                /* visibility: hidden; */
+                                opacity: 0;
+                            }
+                        }
+                        >.p3{
+                            /* border: 2px solid black; */
+                            position: absolute;
+                            left: 0; top: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            background-color: rgb(250, 181, 55);
+                            opacity: .2;
+                            transition: .4s;
+                            &:hover{
+                                /* visibility: hidden; */
+                                opacity: 0;
+                            }
+                        }                               
+                        >.p4{
+                            /* border: 2px solid black; */
+                            position: absolute;
+                            left: 0; top: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            background-color: rgb(186, 62, 186);
+                            opacity: .2;
+                            transition: .4s;
+                            &:hover{
+                                /* visibility: hidden; */
+                                opacity: 0;
+                            }
+                        }                                                                     
+                    }
+                    >figcaption{
+                        height: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* end images */
+
+.new_arrivels{
+    width: 200vh;
+    height: 100vh;
+    >*{
+        /* border: 2px solid black; */
+        width: 100%;
+    }
+    .row1{
+        display: flex;
+        height: 15%;
+        justify-content: center;
+        align-items: center;
+        >h1{
+            font-size: 50px;
+            
+        }
+    }
+    .row{
+        height: 85%;
+        >nav{
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            >ul{
+                /* border: 2px solid black; */
+                width: 90%;
+                height: 80%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                >li{
+                    border: .5px solid gray;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30%;
+                    height: 100%;
+                    >ul{
+                        /* border: 2px solid red; */
+                        border-radius: 10px;
+                        width: 97%;
+                        height: 98%;
+                        >*{
+                            /* border: .1px solid black; */
+                            width: 100%;
+                        }
+                        >.row1{
+                            height: 45%;
+                            >figure{
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                &:hover{
+                                    >a{
+                                        width: 100%;
+                                        background-color: #feb6588b;
+                                    }
+                                }
+                                >img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                                >a{
+                                    position: absolute;
+                                    width: 0%;
+                                    height: 100%;
+                                    /* border: 1px solid red; */
+                                    transition: 1s;
+                                    left: 0; top: 0;
+                                }
+                            }
+                        }
+                        >.row2{
+                            height: 40%;
+                            >*{
+                                /* border: 1px solid green; */
+                                display: block;
+                                margin-left: 10px;
+                                margin-top: 20px;
+                            }
+                            >.d1{
+                                color: #76b62b;
+                                text-decoration: underline;
+                                font-size: 15px;
+                                transition: .4s;
+                                width: 30%;
+                                /* border: 2px solid blue; */
+                                &:hover{
+                                    color: #ffa42d;
+                                    text-decoration: none;
+                                }
+                            }
+                            >.d2{
+                                color: black;
+                                text-decoration: underline;
+                                width: 45%;
+                                font-size: 22px;
+                                font-weight: bold;
+                                transition: .4s;
+                                /* border: 2px solid blue; */
+                                &:hover{
+                                    color: #ffa42d;
+                                    text-decoration: none;
+                                }
+                            }
+                            >.d3{
+                                color: rgb(96, 96, 96);
+                                font-size: 18px;
+                                width: 60%;
+                            }
+                            >.d4{
+                                width: 50%;
+                                >.m1{
+                                    color: red;
+                                    font-weight: bold;
+                                }
+                                >.m2{
+                                    text-decoration: line-through;
+                                    color: gray;
+                                }
+                                >.m3{
+                                    background-color: #ffc98253;
+                                    color: #ffa42d;
+                                    padding: 3px 8px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        >.row3{
+                            height: 10%;
+                            display: flex;
+                            justify-content: center;
+                            >a{
+                                border: .5px solid gray;
+                                border-radius: 10px;
+                                height: 100%;
+                                width: 90%;
+                                font-size: 20px;
+                                font-weight: bold;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: .4s;
+                                &:hover{
+                                    background-color: #ffa42d;
+                                    color: white;
+                                    >span{
+                                        color: white;
+                                    }
+                                }
+                                >span{
+                                    padding-right: 10px;
+                                    transition: .4s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ned new_arrivels */
+
+.ready-to-eat{
+    /* border: 2px solid red; */
+    width: 200vh;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >.row{
+        /* border: 2px solid black; */
+        height: 70%;
+        width: 85%;
+        >figure{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            >img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            >span{
+                position: absolute;
+                left: 0;top: 0;
+                background-color: rgb(19, 163, 19);
+                width: 100%;height: 100%;
+                opacity: .8;
+            }
+            >.row{
+                position: absolute;
+                left: 0; top: 0;
+                /* border: 2px solid black; */
+                width: 100%;
+                height: 100%;
+                justify-content: space-between;
+                >*{
+                    /* border: 2px solid red; */
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                >.shop{
+                    width: 50%;
+                    >div{
+    
+                        >*{
+                            color: white;
+                            
+                        }
+                        >h1{
+                            font-size: 55px;
+                        }
+                        >p{
+                            font-size: 20px;
+                            line-height: 50px;
+                        }
+                    }
+                }
+                >.meal{
+                    width: 30%;
+                    >a{
+                        border: 1px solid white;
+                        border-radius: 10px;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
+                        padding: 30px 60px;
+                        transition: .4s;
+                        &:hover{
+                            color: black;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* end ready-to-eat */
+
+.vegan_drinks{
+    /* border: 2px solid red; */
+    width: 200vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    >.row{
+        /* border: 2px solid black ; */
+        width: 100%;
+        height: 80%;
+        >figure{
+            /* border: 2px solid red; */
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-image: url(../image/plants-bg-3.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >span{
+                position: absolute;
+                left: 0;top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: .8;
+            }
+            >.row{
+                /* border: 2px solid red; */
+                width: 85%;
+                height: 80%;
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                >*{
+                    /* border: 2px solid green; */
+                    height: 100%;
+                }
+                >aside{
+                    width: 30%;
+                    background-color: #ffc800;
+                    border-radius: 10px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    >img{
+                        object-fit: cover;
+                    }
+                    >div{
+                        /* border: 2px solid red; */
+                        position: absolute;
+                        width: 80%;
+                        height: 80%;
+                        >*{
+                            /* border: 2px solid black; */
+                            color: white;
+                        }
+                        >h1{
+                            font-size: 50px;
+                        }
+                        >a{
+                            font-size: 20px;
+                            border: 1px solid white;
+                            border-radius: 10px;
+                            position: absolute;
+                            bottom: 0;
+                            padding: 20px 40px;
+                            transition: .4s;
+                            &:hover{
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+                >section{
+                    width: 68%;
+                    >nav{
+                        background-color: white;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        >ul{
+                            /* border: 2px solid red; */
+                            width: 92%;
+                            height: 80%;
+                            display: flex;
+                            justify-content: space-between;
+                            >li{
+                                /* border: 2px solid violet; */
+                                height: 100%;
+                                width: 23%;
+                                .row{
+                                    /* border: 2px solid violet; */
+                                    height:100%;
+                                    width: 100%;
+                                    >*{
+                                        /* border: 2px solid black; */
+                                        width: 100%;
+                                    }
+                                    >figure{
+                                        height: 50%;
+                                        position: relative;
+                                        border-radius: 10px;
+                                        overflow: hidden;
+                                        >img{
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+                                        >figcaption{
+                                            position: absolute;
+                                            top: 10px; left: 10px;
+                                            padding: 5px 10px;
+                                            background-color: rgb(190, 0, 190);
+                                            border-radius: 80px;
+                                            color: white;
+                                        }
+                                    }
+                                    >.mid{
+                                        height: 35%;
+                                        display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;
+                                        align-items: center;
+                                        >*{
+                                            /* border: 1px solid blue; */
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 100%;
+                                        }
+                                        >.mid_a1{
+                                            font-size: 14px;
+                                            color: #76b62b;
+                                            text-decoration: underline;
+                                            transition: .4s;
+                                            width: fit-content;
+                                            &:hover{
+                                                color: #ffa42d;
+                                                text-decoration: none;
+                                            }
+                                        }
+                                        >.mid_a2{
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                            text-decoration: underline;
+                                            color: black;
+                                            transition: .4s;
+                                            width: fit-content;
+                                            &:hover{
+                                                color: #ffa42d;
+                                                text-decoration: none;
+                                            }
+                                        }
+                                        >.mid_s1{
+                                            >.em1{
+                                                font-size: 18px;
+                                                color: red;
+                                                font-weight: bold;
+                                            }
+                                            >.em2{
+                                                color: gray;
+                                                font-size: 14px;
+                                                text-decoration: line-through;
+                                            }
+                                        }
+                                        >.mid_s2{
+                                            >.em3{
+                                                background-color: #ffc80054;
+                                                color: #ffa42d;
+                                                width: 60px;
+                                                text-align: center;
+                                                padding: 2px 2px;
+                                            }
+                                        }
+                                    }
+                                    >.end{
+                                        height: 15%;
+                                        >a{
+                                            height: 100%;
+                                            width: 100%;
+                                            border: 1px solid gray;
+                                            border-radius: 10px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                            transition: .4s;
+                                            &:hover{
+                                                background-color: rgb(53, 53, 53);
+                                                color: white;
+                                                >span{
+                                                    color: white;
+                                                }
+                                            }
+                                            >span{
+                                                transition: .4s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* end vegan_drinks */
+
+.first {
+    width: 100%;
+    padding: 110px 90px;
+    background-image: url(../image/section-bg-3.png);
+    position: relative;
+
+    &::after {
+        content: '';
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(253, 248, 242);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    >.row {
+        >div {
+            /* border: 1px solid white; */
+            height: 460px;
+
+            &:first-of-type {
+                width: 40%;
+
+                >.row {
+                    height: 100%;
+                    align-content: flex-start;
+
+                    >* {
+                        /* border: 1px solid red; */
+                        width: 100%;
+
+                    }
+
+                    >h3 {
+                        font-family: Sen, Arial, Helvetica, sans-serif;
+                        font-size: 36px;
+                        font-weight: 700px;
+                        line-height: 43.2px;
+                        color: rgb(20, 20, 20);
+                        margin-top: 20px;
+                    }
+
+                    >p {
+
+                        font-family: Sen, Arial, Helvetica, sans-serif;
+                        font-size: 17px;
+                        font-weight: 400px;
+                        line-height: 29.24px;
+                        color: rgb(73, 73, 73);
+
+                        &:nth-of-type(2) {
+                            margin-top: 10px;
+                        }
+
+                        &:nth-of-type(1) {
+                            margin-top: 20px;
+                        }
+
+                    }
+
+                    >strong {
+                        margin-top: 40px;
+
+                        font-family: Sen, Arial, Helvetica, sans-serif;
+                        font-size: 17px;
+                        font-weight: 700px;
+                        line-height: 29.24px;
+                        color: rgb(73, 73, 73);
+                    }
+
+                    >.row {
+                        align-items: center;
+                        margin-top: 20px;
+
+
+
+                        >i {
+                            margin-left: -4px;
+                            font-style: normal;
+                            font-size: larger;
+
+                            >i {
+                                font-style: normal;
+                                font-size: large;
+                                position: relative;
+
+
+                            }
+                        }
+
+                        >div {
+                            font-family: Sen, Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            font-weight: 400px;
+                            line-height: 27.52px;
+                            color: rgb(118, 182, 43);
+                            margin-left: 10px;
+                        }
+                    }
+
+                }
+
+            }
+
+            &:last-of-type {
+                width: 60%;
+                justify-content: space-between;
+
+                >.row {
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                    background-color: white;
+
+                    >* {
+                        width: 100%;
+                        /* border: 1px solid red; */
+                        text-align: center;
+
+
+
+                    }
+
+                    >.row {
+                        justify-content: center;
+
+                        >figure {
+
+                            width: 90px;
+                            height: 90px;
+
+                            >img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 10px;
+                                border: 1px solid transparent;
+                            }
+                        }
+                    }
+
+                    >P {
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        padding: 0 20px;
+                        line-height: 30px;
+
+                    }
+
+                    >div {
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        color: rgb(149, 189, 100);
+
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+/* ///////////////////////////////////////////////////////////// 3 ta adam tamoom shod //////////////////////////////////////////////////////// */
+.second {
+    width: 100%;
+    padding: 80px 160px;
+
+    >.row {
+        height: 70px;
+        /* border: 1px solid red; */
+        justify-content: space-between;
+        align-items: center;
+
+
+        >h2 {
+            font-size: 36px;
+            font-weight: 700px;
+            line-height: 43.2px;
+            color: rgb(20, 20, 20);
+        }
+
+        >a {
+            height: 100%;
+            color: white;
+            border: 1px solid rgb(255, 165, 45);
+            border-radius: 20px;
+            width: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 165, 45);
+            font-family: sen, Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 600px;
+            line-height: 20.4px;
+            text-transform: capitalize;
+            font-weight: bold;
+            transition: .4s;
+
+            &:hover {
+                background-color: rgb(118, 182, 42);
+                border-color: rgb(118, 182, 42);
+            }
+
+            >i {
+                /* margin-left:20px; */
+                transform: translateX(+20px);
+            }
+        }
+    }
+}
+
+/* //////////////////////////////////////////////////////vegan news & Articles       read more articles///////////////////////////// */
+.third {
+    width: 100%;
+    padding: 0px 160px 120px 160px;
+
+    >.row {
+        height: 500px;
+        justify-content: space-between;
+
+        >.row {
+            border: 1px solid gray;
+            width: 30%;
+            border-radius: 10px;
+
+
+            >* {
+                /* border: 1px solid red; */
+                width: 100%;
+            }
+
+            >figure {
+                padding: 7px;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+
+                }
+            }
+
+            >section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                >a {
+                    /* border: 1px solid red; */
+                    text-decoration: dotted !important;
+                    font-size: 18px;
+                    font-weight: 700px;
+                    /* line-height: 33.6px; */
+                    /* font-weight: bold; */
+                    /* margin-top: 30px; */
+                    transition: .4s;
+                    width: fit-content;
+                    &:hover {
+                        color: rgb(255, 164, 45);
+                    }
+                }
+
+                >p {
+                    /* border: 1px solid red; */
+                    margin-top: 20px;
+                    /* padding-left: 30px; */
+                    /* padding-right: 30px; */
+                    font-size: 17px;
+                    font-weight: 400px;
+                    margin-left: 20px;
+                    
+                    /* line-height: 29.24px; */
+                    color: rgb(73, 73, 73);
+                
+                }    
+    
+            }
+            
+
+            >hr {
+
+                width: 320px;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                height: 1px;
+                margin-top: 20px;
+
+            }
+
+            >.row {
+                margin: 40px 0px;
+                margin-left: 30px;
+
+               
+
+                >span {
+                    &:first-of-type {
+                        font-size: 15px;
+                        font-weight: 400px;
+                        Line-height: normal;
+                        color: rgb(73, 73, 73);
+                    }
+
+                    &:last-of-type {
+                        margin: 0 10px;
+                        display: flex;
+                        height: 15px;
+                        width: 1px;
+                        background-color: gray;
+                    }
+                }
+
+                >a {
+                    color: #88b13d;
+                    transition: .4s;
+
+                    &:hover {
+                        color: rgb(255, 164, 45);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* ///////////////////////////////////////////////////////3ta aks kenar ham ////////////////////////////////////////////////////////////////////////// */
+.fourth {
+    width: 100%;
+    background-image: url(../image/vegan-cta-bg-1.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    padding: 100px 100px;
+    height: 510px;
+
+    >.row {
+        height: 100%;
+
+
+        >* {
+            width: 100%;
+            /* border: 1px solid red; */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        >p {
+            font-family: "Happy Monkey", Arial, Helvetica, sans-serif;
+            font-size: 32px;
+            font-weight: 400px;
+            line-height: 44.8px;
+            color: rgb(118, 182, 43);
+            margin-bottom: 60px;
+        }
+
+        >h2 {
+            font-family: Sen, Arial, Helvetica, sans-serif;
+            font-size: 58px;
+            font-weight: 700px;
+            line-height: 69.6px;
+            color: rgb(255, 255, 255);
+
+            >span {
+                width: 90px;
+                height: 60px;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        >a {
+            width: 240px;
+            height: 70px;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-family: Sen, Arial, Helvetica, sans-serif;
+            Font-size: 17px;
+            font-weight: bolder;
+            line-height: 20.4px;
+            margin: 0px auto;
+            margin-top: 50px;
+            color: rgb(255, 255, 255);
+            transition: .4s;
+
+            &:hover {
+                background-color: rgb(118, 182, 42);
+                border-color: rgb(118, 182, 42);
+            }
+
+            >i {
+                transform: translateX(+20px);
+            }
+        }
+    }
+
+
+}
+
+/* /////////////////////////////////////////////////////////////A Vegan Haven for Heartful Living//////////////////////////////// */
+.aboutus1 {
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    padding: 80px 160px;
+
+
+
+
+    >.row {
+        /* border: 1px solid red; */
+
+
+
+        >* {
+            /* border: 1px solid red; */
+            color: black;
+            height: 50px;
+
+
+        }
+
+        >div {
+            width: 40%;
+
+            >figure {
+
+                width: 300px;
+
+                >img {
+
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+
+
+                }
+
+            }
+        }
+
+        >h2 {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+
+            &:nth-of-type(1) {
+                padding-right: 150px;
+            }
+            &:nth-of-type(2) {
+                padding-right:130px;
+            }
+
+
+        }
+
+
+
+
+    }
+}
+
+/* /////////////////////////////////////////////// about us 1 //////////////////////////////////////////////////////////////////////// */
+.aboutus2 {
+    width: 100%;
+    padding: 0px 160px;
+    padding-bottom: 140px;
+    background-color: rgb(242, 242, 242);
+
+    >.row {
+        height: 100%;
+        flex-wrap: nowrap;
+
+        /* border: 1px solid palevioletred; */
+        >.row {
+
+            /* border: 1px solid black; */
+
+            &:nth-of-type(1) {
+                width: 25%;
+                height: 100%;
+
+                >* {
+                    /* border: 1px solid red; */
+                    width: 100%;
+
+                }
+
+                >p {
+                    color: rgb(73, 73, 73);
+                }
+
+                >input {
+                    margin: 30px 0px;
+                    padding: 30px 0px;
+                    padding-left: 20px;
+                    border-color: transparent;
+                    border-radius: 10px;
+                    transition: .4s;
+                    &:hover{
+                        border-color:gray
+                    }
+
+                }
+
+                >button {
+                    border: 1px solid rgb(255, 165, 45);
+                    background-color: rgb(255, 165, 45);
+                    border-radius: 10px;
+                    color: white;
+                    font-weight: bold;
+                    padding: 20px 0px;
+                    transition:.4s;
+                    &:hover{
+                        background-color: rgb(45, 45, 45);
+                        border-color: rgb(45, 45, 45);
+
+                    }
+
+
+
+                }
+            }
+
+            &:nth-of-type(2) {
+                margin-left: 200px;
+                width: 40%;
+
+                >ul {
+                    &:nth-of-type(1){
+                        >li{
+                            &:nth-of-type(1){
+                                color:rgb(118, 182, 43);
+                            }
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        margin-left: 100px;
+                    } 
+
+                    >li {
+
+                        font-size: 17px;
+                        font-weight: 400px;
+                        line-height:40px;
+                        color: rgb(73, 73, 73);
+                        transition: .4s;
+                        &:hover{
+                            color: rgb(118, 182, 43);
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                margin-left: 10px;
+                width: 20%;
+
+                >* {
+                    width: 100%;
+                    /* border: 1px solid red; */
+                    padding-left: 40px;
+
+
+                }
+
+                >p {
+                    color: rgb(73, 73, 73);
+                    font-style: italic;
+                    font-weight: bold;
+                    
+                    
+
+                }
+
+                >strong {
+                    font-size: 24px;
+                    font-weight: 700px;
+                    line-height: 41.28px;
+                    color: rgb(118, 182, 43);
+                }
+
+                >a {
+                    font-size: smaller;
+                    text-decoration-line: underline;
+                    color: #494949;
+                    transition: .4s;
+                    &:hover{
+                        color: rgb(242, 181, 92);
+                        text-decoration-color: #494949;
+                    }
+                    
+                    
+                }
+
+                >.row {
+                    flex-wrap: nowrap;
+                    
+
+                    >a {
+                        /* border: 1px solid white; */
+                        border-radius: 10px;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+                        transition: .4s;
+                        &:hover{
+                            background-color: gray;
+                            >i{
+                                color: white;
+                            }
+                        }
+
+                        &:not(:nth-of-type(1)) {
+                            margin-left: 20px;
+                        }
+
+                        >i {
+                            color: gray;
+                            font-style: normal;
+                            transition: .4s;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

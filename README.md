@@ -14,7 +14,7 @@ yore skills. >>>>>>>>>>date of publishing: Sunday, 28 July 2024. Download the zi
 
 ## ^Demo^ 
 
-https://ari420.github.io/A_vegan-store_only_html5_css3/
+https://ari420.github.io/A_vegan-store_only_html5_css3/asset/
 ## 🔗 Links
 [![Armiinrafiee](https://img.shields.io/badge/My_friend_github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Armiinrafiee/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arian-afsharian-7a3903156/)

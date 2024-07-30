@@ -672,7 +672,7 @@
 /* end menu */
 
 .lifestyle{
-    width: 200vh;
+    width: 100%;
     height: 70vh;
     >.row{
         /* border: 2px solid red; */
@@ -818,7 +818,7 @@
 
 .images{
     /* border: 2px solid red; */
-    width: 200vh;
+    width: 100%;
     height: 80vh;
     background-color: white;
     >.row{
@@ -939,7 +939,7 @@
 /* end images */
 
 .new_arrivels{
-    width: 200vh;
+    width: 100%;
     height: 100vh;
     >*{
         /* border: 2px solid black; */
@@ -1112,7 +1112,7 @@
 
 .ready-to-eat{
     /* border: 2px solid red; */
-    width: 200vh;
+    width: 100%;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -1195,7 +1195,7 @@
 
 .vegan_drinks{
     /* border: 2px solid red; */
-    width: 200vh;
+    width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
